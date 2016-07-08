@@ -18,12 +18,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
   abstract: true,
   templateUrl: "templates/menu.html",
   controller: "AppCtrl"
-  });
+ });
  $stateProvider.state("app.home", {
   url: "/home",
   views: {
    "menuContent": {
      templateUrl: "templates/home.html"
+   }
+  }
+ });
+ $stateProvider.state("app.about", {
+  url: "/about",
+  views: {
+   "menuContent": {
+     templateUrl: "templates/about.html"
    }
   }
  });
